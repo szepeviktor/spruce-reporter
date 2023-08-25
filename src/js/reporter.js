@@ -4,7 +4,7 @@
   const timeEl = document.getElementById('time');
 
   uaEl.innerHTML = navigator.userAgent;
-  timeEl.innerHTML = new Date().toLocaleString();
+  timeEl.innerHTML = (new Date()).toUTCString();
 
   fetch('https://api64.ipify.org?format=json')
     .then((res) => res.json())
