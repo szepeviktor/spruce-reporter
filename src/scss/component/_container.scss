@@ -2,10 +2,11 @@
 
 .container {
   align-items: center;
-  block-size: 100dvh;
+  block-size: 100lvh;
   display: flex;
   justify-content: center;
-  margin-inline: spacer('m');
+  margin: spacer('m');
+  min-block-size: 30rem;
 
   &__inner {
     display: flex;

@@ -1,10 +1,12 @@
 @use 'sprucecss/scss/spruce' as *;
 
-@include generate-color-variables(
-  $dark-colors,
-  ':root[data-theme-mode="dark"]'
-);
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
 
-[data-theme-mode='dark'] {
-  color-scheme: dark;
+  @include generate-color-variables(
+    $dark-colors,
+    ':root'
+  );
 }
