@@ -31,8 +31,38 @@
     ),
   ),
   $dark-colors: dark.$colors,
+  $generators: (
+    'content': (
+      'accessibility': false,
+      'default': true,
+      'display': true,
+      'divider': false,
+      'layout': true,
+      'media': false,
+      'normalize': true,
+      'print': false,
+      'root': true,
+      'table': false,
+      'typography': true,
+      'utilities': false,
+    ),
+    'form': (
+      'btn': true,
+      'file-btn': false,
+      'form-check': false,
+      'form-control': false,
+      'form-description': false,
+      'form-feedback': false,
+      'form-fieldset': false,
+      'form-group': false,
+      'form-label': false,
+      'form-range': false,
+      'form-row': false,
+      'form-switch': false,
+    ),
+  ),
   $settings: (
-    'prefix': 'spruce-x-11ty'
+    'prefix': 'spruce'
   ),
   $typography: (
     'font-family-base': #{'Open Sans', sans-serif},
