@@ -1,0 +1,25 @@
+@use 'sprucecss/scss/spruce' as *;
+
+.display-card {
+  border: 1px solid color('border');
+  border-radius: config('border-radius-lg', $display);
+  display: flex;
+  flex-direction: column;
+  gap: spacer('m');
+  padding: spacer-clamp('m', 'l');
+
+  &__title {
+    font-size: font-size('h2');
+    margin-block: 0;
+  }
+
+  ul {
+    @include clear-list;
+
+    > * + * {
+      border-block-start: 1px dashed color('border');
+      margin-block-start: spacer('s');
+      padding-block-start: spacer('s');
+    }
+  }
+}

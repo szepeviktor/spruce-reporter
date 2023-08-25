@@ -1,0 +1,17 @@
+@use 'sprucecss/scss/spruce' as *;
+
+.container {
+  align-items: center;
+  block-size: 100dvh;
+  display: flex;
+  justify-content: center;
+  margin-inline: spacer('m');
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: spacer('m');
+    inline-size: 30rem;
+    max-inline-size: 100%;
+  }
+}
