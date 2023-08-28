@@ -2,7 +2,7 @@
 
 .container {
   align-items: center;
-  block-size: 100lvh;
+  block-size: calc(100dvh - 2 * #{spacer('m')});
   display: flex;
   justify-content: center;
   margin: spacer('m');
