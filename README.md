@@ -1,6 +1,6 @@
 # Spruce Reporter
 
-Tired of explaining your user how to report their browser UA, IP address and the UTC time??
+Tired of explaining to your users how to report their browser's UA, IP address and UTC time?
 
 `index.html` gives you a one-click solution.
 
